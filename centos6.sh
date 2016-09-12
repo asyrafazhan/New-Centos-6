@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# initialisasi var
+# install var
 OS=`uname -p`;
 
 # go to root
@@ -18,6 +18,16 @@ sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.d/rc.loca
 # install wget and curl
 yum -y install wget curl
 
+# setting repo
+wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+wget https://centos6.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm
+rpm -Uvh epel-release-6-8.noarch.rpm
+rpm -Uvh remi-release-6.rpm
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+rpm -Uvh http://repo.webtatic.com/yum/el6/latest.rpm
 
 # remove unused
 yum -y remove sendmail;
