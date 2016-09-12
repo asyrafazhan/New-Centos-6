@@ -1,6 +1,6 @@
-### Centos 6 (OpenVZ VPS)
+### Centos 6
 ```
-wget https://raw.github.com/drcyber96/autoscript/master/centos6.sh
+wget https://raw.github.com/asyrafazhan/New-Centos-6/master/centos6.sh
 bash centos6.sh
 ```
 Tested on
@@ -10,7 +10,7 @@ Tested on
 
 ### Centos 6 (KVM VPS)
 ```
-wget https://raw.github.com/drcyber96/autoscript/master/centos6-kvm.sh
+wget https://raw.github.com/asyrafazhan/New-Centos-6/master/centos6-kvm.sh
 bash centos6-kvm.sh
 ```
 Tested on
@@ -20,7 +20,7 @@ Tested on
 
 ### Debian 6 32bit
 ```
-wget https://raw.github.com/drcyber96/autoscript/master/debian6.sh
+wget https://raw.github.com/asyrafazhan/New-Centos-6/master/debian6.sh
 bash debian6.sh
 ```
 Tested on
@@ -30,7 +30,7 @@ Tested on
 
 ### Debian 7 32bit
 ```
-wget https://raw.github.com/drcyber96/autoscript/master/debian7.sh
+wget https://raw.github.com/asyrafazhan/New-Centos-6/master/debian7.sh
 bash debian7.sh
 ```
 Tested on
