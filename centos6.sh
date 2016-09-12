@@ -77,7 +77,7 @@ service nginx restart
 
 # install openvpn
 mkdir /etc/openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/asyrafazhan/New-Centos-6/master/conf/openvpn-2.3.12.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/asyrafazhan/New-Centos-6/master/conf/openvpn-2.3.12.tar.gz"
 cd /etc/openvpn/
 tar xf openvpn.tar
 wget -O /etc/openvpn/1194.conf "https://raw.github.com/asyrafazhan/New-Centos-6/master/conf/1194-centos.conf"
