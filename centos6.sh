@@ -113,8 +113,8 @@ wget -O /etc/openvpn/1194-client.ovpn "https://raw.github.com/asyrafazhan/New-Ce
 sed -i $MYIP2 /etc/openvpn/1194-client.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
 useradd -M -s /bin/false AsyrafAzhan
-echo "AsyrafAzhan:$PASS" | chpasswd
-echo "AsyrafAzhan" > pass.txt
+echo "qwerty:$PASS" | chpasswd
+echo "Password" > pass.txt
 echo "$PASS" >> pass.txt
 tar cf client.tar 1194-client.ovpn pass.txt
 cp client.tar /home/vps/public_html/
